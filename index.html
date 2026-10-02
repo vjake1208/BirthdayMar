@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Broski 💙</title>
+
+<style>
+body {
+  background: #0b1628;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+.card {
+  max-width: 420px;
+  margin: 45px auto;
+  padding: 25px 20px;
+  background: #142640;
+  border: 2px solid #328bfa;
+  border-radius: 20px;
+}
+
+h1 {
+  color: #65b3ff;
+  font-size: 30px;
+}
+
+p {
+  color: #d4e6ff;
+  line-height: 1.8;
+}
+
+button {
+  background: #328bfa;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 12px 0;
+}
+
+#surprise {
+  display: none;
+  margin-top: 25px;
+  animation: pop .5s ease;
+}
+
+#surprise img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  border: 3px solid #65b3ff;
+}
+
+.letter {
+  background: #0b1628;
+  border-radius: 14px;
+  padding: 20px;
+  margin-top: 25px;
+  text-align: left;
+  border: 1px solid #328bfa;
+}
+
+.letter h2 {
+  text-align: center;
+  color: #65b3ff;
+}
+
+.caption {
+  color: #65b3ff;
+  font-weight: bold;
+}
+
+@keyframes pop {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+</style>
+</head>
+
+<body>
+<div class="card">
+
+  <h1>HAPPY BIRTHDAY BROSKI 🎂</h1>
+
+  <p>
+    YOOO GANG 🗣️🔥<br>
+    I got a little surprise for you.<br>
+    Go on, click it. Trust me bro 💀
+  </p>
+
+  <button onclick="revealFace()">CLICK HERE 👀</button>
+
+  <div id="surprise">
+
+    <h2 class="caption">SO GOOFY 😭💀</h2>
+
+    <img src="Marsha.jpeg">
+
+    <p>Skibidi </p>
+
+    <div class="letter">
+      <h2> A LITTLE LETTER FOR YOU </h2>
+
+      <p>YO, MAR!! 😭🙏</p>
+
+      <p>
+        HAPPY BIRTHDAYYYY!! 🎂🎉
+        BRO YOU'RE GETTING OLD FR 💀
+        ANOTHER YEAR OF YOU BEING A GOOFY AHH
+        PERSON, AND HONESTLY, THAT'S CRAZY.
+      </p>
+
+      <p>
+        But fr tho, I'm really glad we're friends.
+        Thanks for all the random talks, dumb jokes,
+        and moments that make absolutely no sense
+        but are funny anyway 😭
+      </p>
+
+      <p>
+        I hope you have a really good birthday,
+        get lots of yummy food, receive cool gifts,
+        and have a year full of good memories.
+        I hope things go well for you and that you
+        keep being your awesome self.
+      </p>
+
+      <p>
+        Stay goofy, stay cool, and never lose
+        your weird ahh energy 💀🙏
+        Don't let the haters nerf your aura.
+      </p>
+
+      <p>
+        Anyways, that's enough yapping from me.
+        HAVE THE BEST BIRTHDAY, BROSKI 🗣️🔥💙
+      </p>
+
+      <p style="text-align:right;">
+        — Jake 🤝
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function revealFace() {
+  const surprise = document.getElementById("surprise");
+  surprise.style.display = "block";
+
+  document.querySelector("button").textContent =
+    "SURPRISE UNLOCKED 💀";
+
+  surprise.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+}
+</script>
+
+</body>
+</html>
